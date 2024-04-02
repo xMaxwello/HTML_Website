@@ -109,9 +109,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.corp-text{
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     color: rgba(256, 256, 256, 0.7);
+    padding-left: 16px;
+    padding-top: 265px;
 }
-
