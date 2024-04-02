@@ -1,0 +1,117 @@
+body {
+    background-color: #001427;
+    font-family: Poppins;
+    color: white;
+}
+
+header {
+    background-color: #001427;
+}
+
+
+
+.container {
+    max-width: 1520px;
+    align-content: center;
+
+    .logo {
+        text-align: center;
+        align-content: center;
+    }
+}
+
+.card {
+    border-radius: 10px;
+    height: 380px;
+    max-width: 1520px;
+    margin: auto;
+    background-color: #00ACDF;
+    text-align: center;
+    align-content: center;
+
+    .title{
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 500;
+    }
+
+    .caption{
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+
+    .heart{
+        width: 24px;
+        height: 24px;
+    }
+
+    .offer{
+        border-width: 1px;
+        border-radius: 6px;
+        width: 327px;
+        height: 40px;
+        padding: 8px 16px;
+        border-color: white;
+        background-color: transparent;
+
+
+        .offer-text{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.column {
+    flex: 0 1 490.67px;
+    padding: 0 5px;
+}
+
+.small-card {
+    background-color: rgba(0, 172, 223, 0.05);
+    border-radius: 6%;
+    max-width: 490.67px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.title2{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.column2 {
+    flex: 0 1 233px;
+    padding: 0 5px;
+}
+
+.corp-card{
+    background-color: rgba(0, 172, 223, 0.05);
+    border-radius: 10%;
+    max-width: 233px;
+    height: 321px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(256, 256, 256, 0.7);
+}
+
