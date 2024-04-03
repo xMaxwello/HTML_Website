@@ -117,7 +117,7 @@ header {
 
 .small-card {
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 6%;
+    border-radius: 6px;
     max-width: 490.67px;
     height: 84px;
     display: flex;
@@ -141,12 +141,18 @@ header {
 
 .corp-card{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 233px;
     height: 321px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.corp-card-square{
+    background-color: rgba(101, 77, 255, 0.6);
+    width: 201px;
+    height: 201px;
 }
 
 .corp-text{
@@ -165,7 +171,7 @@ header {
 
 .partner-card{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 490px;
     height: 276px;
     display: flex;
@@ -181,12 +187,12 @@ header {
 }
 
 .service-column{
-    flex: 0 1 382px;
+    flex: max-content;
 }
 
 .service-card1{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 382px;
     height: 182px;
     display: flex;
@@ -196,7 +202,7 @@ header {
 
 .service-card2{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 370px;
     height: 182px;
     display: flex;
@@ -206,7 +212,7 @@ header {
 
 .service-card3{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 355px;
     height: 182px;
     display: flex;
@@ -216,7 +222,7 @@ header {
 
 .service-card4{
     background-color: rgba(0, 172, 223, 0.05);
-    border-radius: 10%;
+    border-radius: 10px;
     max-width: 388px;
     height: 182px;
     display: flex;
@@ -231,6 +237,17 @@ header {
     text-align: center;
 }
 
+.team-column{
+    flex: 0 1 490.6px;
+}
+
+.team-card{
+    background-color: rgba(0, 172, 223, 0.05);
+    max-width: 490.6px;
+    height: 112px;
+    border-radius: 10px;
+}
+
 
 .site-footer {
     width: 100%;
@@ -242,11 +259,18 @@ header {
 }
 
 .footerCompanyText{
-    display: flex;
     opacity: 70%;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-align: left;
     margin-top: auto;
+}
+
+.footerMiddle{
+    text-align: center;
+}
+
+.footerLogos{
+    text-align: right;
 }
