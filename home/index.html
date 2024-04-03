@@ -16,8 +16,18 @@
 <body>
     <header>
         <nav id="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="index.html"><img src="/img/logo.svg"></a></h1>
+            <div class="navbar-container">
+                <div class="nav-icons left">
+                    <a href="#"><img src="/img/material-symbols_chevron-left-rounded.svg"></a>
+                    <a href="#"><img src="/img/material-symbols_chevron-right-rounded.svg"></a>
+                </div>
+                <div class="nav-logo">
+                    <a href="index.html"><img src="/img/logo.svg"></a>
+                </div>
+                <div class="nav-icons right">
+                    <a href="/about/about.html"><img src="/img/Icon-with-hover.svg"></a>
+                    <a href="#" id="fullscreenToggle"><img src="/img/Icon-fullscreen.png"></a>
+                </div>
             </div>
         </nav>
     </header>
@@ -30,15 +40,17 @@
     </button>
 </div>
 
-<div class="row">
-    <div class="column">
-        <div class="small-card">75+ Projekte erfolgreich abgeschlossen</div>
-    </div>
-    <div class="column">
-        <div class="small-card">30+ Team mit Sitz in Deutschland</div>
-    </div>
-    <div class="column">
-        <div class="small-card">Full Service Dev-Team</div>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <div class="small-card">75+ Projekte erfolgreich abgeschlossen</div>
+        </div>
+        <div class="column">
+            <div class="small-card">30+ Team mit Sitz in Deutschland</div>
+        </div>
+        <div class="column">
+            <div class="small-card">Full Service Dev-Team</div>
+        </div>
     </div>
 </div>
 
@@ -80,4 +92,32 @@
 </div>
 
 </body>
+<script>
+    document.getElementById('fullscreenToggle').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (!document.fullscreenElement) {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                document.documentElement.webkitRequestFullscreen();
+            } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
+                document.documentElement.msRequestFullscreen();
+            }
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari & Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+    });
+</script>
+
 </html>

@@ -8,16 +8,46 @@ header {
     background-color: #001427;
 }
 
-
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+}
 
 .container {
     max-width: 1520px;
-    align-content: center;
+    margin: auto;
+    padding: 0 15px;
+}
 
-    .logo {
-        text-align: center;
-        align-content: center;
-    }
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1520px;
+    margin: auto;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons.left {
+    justify-content: flex-start;
+}
+
+.nav-icons.right {
+    justify-content: flex-end;
+}
+
+.nav-logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -28,46 +58,46 @@ header {
     background-color: #00ACDF;
     text-align: center;
     align-content: center;
+}
 
-    .title{
-        font-size: 48px;
-        line-height: 72px;
-        font-weight: 500;
-    }
+.card .title{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 500;
+}
 
-    .caption{
-        font-size: 24px;
-        line-height: 36px;
-        font-weight: 400;
-    }
+.card .caption{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
 
-    .heart{
-        width: 24px;
-        height: 24px;
-    }
+.card .heart{
+    width: 24px;
+    height: 24px;
+}
 
-    .offer{
-        border-width: 1px;
-        border-radius: 6px;
-        width: 327px;
-        height: 40px;
-        padding: 8px 16px;
-        border-color: white;
-        background-color: transparent;
+.card .offer {
+    border-width: 1px;
+    border-radius: 6px;
+    width: 327px;
+    height: 40px;
+    padding: 8px 16px;
+    border-color: white;
+    background-color: transparent;
+}
 
 
-        .offer-text{
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 500;
-            color: white;
-        }
-    }
+.card .offer .offer-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
 }
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -5px;
 }
