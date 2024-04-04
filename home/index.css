@@ -2,10 +2,45 @@ html,body {
     background-color: #001427;
     font-family: Poppins, serif;
     color: white;
+    margin: 0;
+}
+
+a {
+    color: white;
 }
 
 header {
     background-color: #001427;
+}
+
+.banner{
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(0, 172, 223, 0.05);
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+
+.banner-content{
+    display: flex;
+    white-space: nowrap;
+    animation: scrollBanner 40s linear infinite;
+}
+
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0%);
+    } 100% {
+        transform: translateX(-50%);
+          }
+}
+
+.banner-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 20px;
 }
 
 #navbar {
@@ -37,10 +72,21 @@ header {
 
 .nav-icons.left {
     justify-content: flex-start;
+    gap: 12px;
 }
 
 .nav-icons.right {
     justify-content: flex-end;
+    gap: 24px;
+}
+
+.nav-icons.right a{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.nav-icons.right a:hover{
+    opacity: 1;
 }
 
 .nav-logo {
@@ -140,19 +186,126 @@ header {
 }
 
 .corp-card{
+    position: relative;
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
     max-width: 233px;
     height: 321px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.corp-card img {
+    position: absolute;
+}
+
+.corp-card .secjur-1{
+    top: 60px;
+    left: 28px;
+}
+
+.corp-card .secjur-2{
+    top: 77px;
+    left: 56px;
+}
+
+.corp-card .secjur-3{
+    top: 104px;
+    left: 125px;
+}
+
+.corp-card .spaleck-1{
+    top: 54px;
+    left: 28px;
+}
+
+.corp-card .spaleck-2{
+    top: 123px;
+    left: 57px;
+}
+
+.corp-card .spaleck-3{
+    top: 144px;
+    left: 39px;
+}
+
+.corp-card .crs-1{
+    top: 50px;
+    left: 28px;
+}
+
+.corp-card .crs-2{
+    top: 98px;
+    left: 52px;
+}
+
+.corp-card .crs-3{
+    top: 113px;
+    left: 150px;
+}
+
+.corp-card .dohrn-1{
+    top: 58px;
+    left: 28px;
+}
+
+.corp-card .dohrn-2{
+    top: 115px;
+    left: 99px;
+}
+
+.corp-card .schmitt-1{
+    top: 58px;
+    left: 28px;
+}
+
+.corp-card .schmitt-2{
+    top: 103px;
+    left: 41px;
+}
+
+.corp-card .lüftring-1{
+    top: 55px;
+    left: 33px;
+}
+
+.corp-card .lüftring-2{
+    top: 75px;
+    left: 145px;
 }
 
 .corp-card-square{
-    background-color: rgba(101, 77, 255, 0.6);
+    position: relative;
+    border-radius: 6px;
     width: 201px;
     height: 201px;
+    align-self: flex-start;
+    margin-left: 16px;
+}
+
+.square-color-1 {
+    background-image: radial-gradient(rgba(101, 77, 255, 0.6), rgba(147, 131, 255, 0.6));
+}
+
+.square-color-2 {
+    background-image: radial-gradient(rgba(0, 129, 172, 0.6), rgba(0, 163, 218, 0.6));
+}
+
+.square-color-3 {
+    background-image: radial-gradient(rgba(81, 27, 43, 0.6), rgba(104, 35, 56, 0.6));
+}
+
+.square-color-4 {
+    background-image: radial-gradient(rgba(175, 185, 205, 0.6), rgba(239, 241, 245, 0.6));
+}
+
+.square-color-5 {
+    background-image: radial-gradient(rgba(0, 118, 160, 0.6), rgba(0, 150, 206, 0.6));
+}
+
+.square-color-6 {
+    background-image: radial-gradient(rgba(56, 56, 56, 0.6), rgba(71, 71, 71, 0.6));
 }
 
 .corp-text{
@@ -161,7 +314,8 @@ header {
     font-weight: 500;
     color: rgba(256, 256, 256, 0.7);
     padding-left: 16px;
-    padding-top: 265px;
+    padding-right: 16px;
+    margin-top: 20px;
 }
 
 .partner-column{
@@ -176,6 +330,7 @@ header {
     height: 276px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -184,6 +339,8 @@ header {
     line-height: 36px;
     font-weight: 500;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .service-column{
@@ -198,6 +355,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .service-card2{
@@ -208,6 +366,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .service-card3{
@@ -218,6 +377,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .service-card4{
@@ -228,6 +388,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .service-text{
@@ -235,6 +396,8 @@ header {
     line-height: 24px;
     font-weight: 500;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .team-column{
