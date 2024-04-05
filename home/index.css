@@ -243,6 +243,7 @@ header {
 
 .corp-card img {
     position: absolute;
+    transition: transform 0.5s ease;
 }
 
 .corp-card .secjur-1{
@@ -260,6 +261,18 @@ header {
     left: 125px;
 }
 
+.corp-card:hover .secjur-1{
+    transform: translateY(-5px);
+}
+
+.corp-card:hover .secjur-2{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.corp-card:hover .secjur-3{
+    transform: scale(1.1);
+}
+
 .corp-card .spaleck-1{
     top: 54px;
     left: 28px;
@@ -273,6 +286,18 @@ header {
 .corp-card .spaleck-3{
     top: 144px;
     left: 39px;
+}
+
+.corp-card:hover .spaleck-1{
+    transform: translateY(-5px);
+}
+
+.corp-card:hover .spaleck-2{
+    transform: translateX(5px);
+}
+
+.corp-card:hover .spaleck-3{
+    transform: translateY(5px);
 }
 
 .corp-card .crs-1{
@@ -290,6 +315,18 @@ header {
     left: 150px;
 }
 
+.corp-card:hover .crs-1{
+    transform: translateY(-5px);
+}
+
+.corp-card:hover .crs-2{
+    transform: translateY(5px);
+}
+
+.corp-card:hover .crs-3{
+    transform: translateY(5px) translateX(5px);
+}
+
 .corp-card .dohrn-1{
     top: 58px;
     left: 28px;
@@ -298,6 +335,14 @@ header {
 .corp-card .dohrn-2{
     top: 115px;
     left: 99px;
+}
+
+.corp-card:hover .dohrn-1{
+    transform: translateY(-5px);
+}
+
+.corp-card:hover .dohrn-2{
+    transform: translateY(5px) translateX(5px) scale(1.05);
 }
 
 .corp-card .schmitt-1{
@@ -310,6 +355,14 @@ header {
     left: 41px;
 }
 
+.corp-card:hover .schmitt-1{
+    transform: translateY(-5px) scale(0.95);
+}
+
+.corp-card:hover .schmitt-2{
+    transform: translateY(5px);
+}
+
 .corp-card .lüftring-1{
     top: 55px;
     left: 33px;
@@ -319,6 +372,15 @@ header {
     top: 75px;
     left: 145px;
 }
+
+.corp-card:hover .lüftring-1{
+    transform: scale(1.1) translateX(5px);
+}
+
+.corp-card:hover .lüftring-2{
+    transform: translateX(-10px);
+}
+
 
 .corp-card-square{
     position: relative;
