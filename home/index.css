@@ -6,6 +6,7 @@ html,body {
 }
 
 a {
+    text-decoration: none;
     color: white;
 }
 
@@ -28,12 +29,16 @@ header {
     animation: scrollBanner 40s linear infinite;
 }
 
+.banner-content a{
+    text-decoration: underline;
+}
+
 @keyframes scrollBanner {
     0% {
         transform: translateX(0%);
     } 100% {
-        transform: translateX(-50%);
-          }
+          transform: translateX(-50%);
+      }
 }
 
 .banner-text{
@@ -146,7 +151,7 @@ header {
     line-height: 24px;
     font-weight: 500;
     color: white;
-    font-family: Poppins;
+    font-family: Poppins, serif;
 }
 
 .row {
@@ -193,11 +198,47 @@ header {
     position: relative;
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
-    max-width: 233px;
+    border: 2px solid transparent;
+    width: 233px;
     height: 321px;
     display: flex;
     flex-direction: column;
     padding-top: 16px;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.secjur:hover{
+    border-color: rgba(101, 77, 255, 1);
+    background-color: rgba(101, 77, 255, 0.1);
+}
+
+.spaleck:hover{
+    border-color: rgba(0, 129, 172, 1);
+    background-color: rgba(0, 129, 172, 0.1);
+}
+
+.crs:hover{
+    border-color: rgba(81, 27, 43, 1);
+    background-color: rgba(81, 27, 43, 0.1);
+}
+
+.dohrn:hover{
+    border-color: rgba(175, 185, 205, 1);
+    background-color: rgba(175, 185, 205, 0.1);
+}
+
+.schmitt:hover{
+    border-color: rgba(0, 118, 160, 1);
+    background-color: rgba(0, 118, 160, 0.1);
+}
+
+.lüftring:hover{
+    border-color: rgba(56, 56, 56, 1);
+    background-color: rgba(56, 56, 56, 0.1);
+}
+
+.corp-card:hover .corp-text{
+    opacity: 1;
 }
 
 .corp-card img {
@@ -312,22 +353,29 @@ header {
     background-image: radial-gradient(rgba(56, 56, 56, 0.6), rgba(71, 71, 71, 0.6));
 }
 
-.corp-text{
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 500;
-    color: rgba(256, 256, 256, 0.7);
+.corp-logo{
     padding-left: 16px;
     padding-right: 16px;
     margin-top: 20px;
 }
 
-.partner-column{
-     flex: 0 1 490px;
-     padding: 0 5px;
- }
+.corp-text{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    opacity: 0.7;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
 
-.partner-card{
+.partner-column{
+    flex: 0 1 490px;
+    padding: 0 5px;
+}
+
+.partner-card {
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
     max-width: 490px;
@@ -336,16 +384,36 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
 }
 
-.partner-text{
+.partner-text {
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    transition: color 0.3s ease;
 }
+
+.partner-card svg{
+    transition: fill 0.3s ease;
+}
+
+.partner-card:hover .partner-text {
+    color: #00acdf;
+}
+
+.partner-card:hover {
+    border-color: #00acdf;
+}
+
+.partner-card:hover svg{
+    fill: #00acdf;
+}
+
 
 .service-column{
     flex: max-content;
@@ -358,6 +426,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+.service-card:hover{
+    background-color: #00acdf;
 }
 
 .service-card-size-1{
@@ -394,27 +467,31 @@ header {
 }
 
 .team-card{
-    position: relative;
     display: flex;
-    flex-direction: row;
     background-color: rgba(0, 172, 223, 0.05);
     max-width: 490.6px;
     max-height: 112px;
     border-radius: 10px;
+    margin-bottom: 16px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
 
+.team-card:hover{
+    border-color: #00acdf;
 }
 
 .team-card-square{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 6px;
     width: 80px;
     height: 80px;
     align-self: flex-start;
     margin: 16px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
+
 
 .square-color-7{
     background-color: rgba(113, 90, 255, 1);
@@ -435,21 +512,28 @@ header {
 .team-card-text{
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .team-text-title{
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    margin: 0 0 6px 0;
 }
 
 .team-text-subtitle{
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    opacity: 70%;
+    opacity: 0.7;
+    margin: 0;
+    transition: opacity 0.3s ease;
 }
 
+.team-card:hover .team-text-subtitle{
+    opacity: 1;
+}
 
 .site-footer {
     width: 100%;
