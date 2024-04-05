@@ -115,13 +115,13 @@ header {
     box-sizing: border-box;
 }
 
-.card .title{
+.title{
     font-size: 48px;
     line-height: 72px;
     font-weight: 500;
 }
 
-.card .caption{
+.caption{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,27 +131,29 @@ header {
     margin: 10px 0;
 }
 
-.card .heart{
+.heart{
     width: 24px;
     height: 24px;
 }
 
-.card .offer {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-width: 1px;
+.offer-card{
+    background-color: gray;
     border-radius: 6px;
     width: 327px;
     height: 40px;
-    padding: 8px 16px;
-    border-color: white;
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px white;
+}
+
+.offer-text {
+    display: inline-flex;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: white;
-    font-family: Poppins, serif;
+    padding: 8px 16px;
 }
 
 .row {
@@ -597,27 +599,47 @@ header {
     opacity: 1;
 }
 
-.site-footer {
+footer {
     width: 100%;
     height: 379px;
     background-color: #000F1D;
 }
 
+.footer-column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-left{
+    align-items: flex-start;
+}
+
+.footer-middle{
+    align-items: center;
+}
+
+.footer-right{
+    align-items: flex-end;
+}
+
 .footerCompanyText{
-    opacity: 70%;
+    margin-top: auto;
+    opacity: 0.7;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    text-align: left;
-    margin-top: auto;
+}
+
+.footerCompanyTextSpacing{
+    word-spacing: 15px;
 }
 
 .footerMiddle{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    gap: 20px
 }
 
 .social-media-icons{
@@ -625,10 +647,9 @@ header {
     gap: 24px;
 }
 
-.footerMiddle p, .footerMiddle img, .social-media-icons img{
-    margin: 32px 0;
-}
-
 .footerLogos{
-    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    opacity: 0.7;
 }
