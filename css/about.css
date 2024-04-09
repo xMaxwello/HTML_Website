@@ -10,6 +10,23 @@ a {
     color: white;
 }
 
+
+h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
 header {
     background-color: #001427;
 }
@@ -101,11 +118,7 @@ header {
     align-items: center;
 }
 
-.title2{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 500;
-}
+
 
 .video-card h1{
     font-size: 48px;
@@ -119,40 +132,59 @@ header {
     font-weight: 400;
 }
 
+@media (max-width: 768px) {
+    .video-card h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .video-card p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
 .videoBox {
     position: relative;
     width: 100%;
     height: 50vh;
     overflow: hidden;
     border-radius: 10px;
+}
 
-    .video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: calc(100% * 9 / 2);
-        transform: translate(-50%, -50%);
-    }
-
-    .foregroundOverlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.7);
-    }
-
-    .videoText {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
+@media (max-width: 768px) {
+    .videoBox{
+        height: 250px;
     }
 }
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: calc(100% * 9 / 2);
+    transform: translate(-50%, -50%);
+}
+
+.foregroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.videoText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
 
 .swiper-card{
     height: 295px;
@@ -188,141 +220,138 @@ header {
     border: 2px solid #00ACDF;
 }
 
+@media (max-width: 768px) {
+    .team {
+        display: none;
+    }
+}
 
-.contact-wrapper{
+
+.contact-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
 
-        .contact-card{
-            border-radius: 10px;
-            max-width: 740px;
-            display: flex;
-            flex-direction: column;
-        }
+.contact-card {
+    border-radius: 10px;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .contact-subtitle{
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 400;
-            opacity: 0.7;
-        }
+.contact-subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    opacity: 0.7;
+}
 
-        .contact-image{
-            display: block;
-            border-radius: 10px;
-            width: 740px;
-            height: 385px;
-            margin: 20px 0;
-            object-fit: cover;
-            opacity: 0.7;
-        }
+.contact-image{
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 740px;
+    height: 385px;
+    margin: 20px 0;
+    object-fit: cover;
+    opacity: 0.7;
+}
 
-        .infos{
-            display: flex;
-            flex-wrap: wrap;
+.infos{
+    display: flex;
+    flex-wrap: wrap;
 
-            .top, .bottom{
-                width: 100%;
-                display: flex;
+    .top, .bottom{
+        width: 100%;
+        display: flex;
 
-                div {
-                    width: 50%;
-                }
-            }
-        }
-    }
-
-    .contact-right {
-
-        .formular-card {
-            background-color: rgb(13, 32, 50);
-            border-radius: 10px;
-            max-width: 656px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid transparent;
-            padding: 20px;
-        }
-
-        .nameWrapper {
-            display: flex;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .nameField {
-            width: 100%;
-        }
-
-        .nameField input {
-            border-radius: 6px;
-            padding: 10px;
-            border: 2px solid white;
-            background: transparent;
-            color: white;
-            width: 290px;
-            font-family: Poppins, serif;
-        }
-
-        .subjectWrapper, .commentWrapper {
-            margin-bottom: 20px;
-        }
-
-        .subjectWrapper input, .commentWrapper textarea {
-            padding: 10px ;
-            border-radius: 6px;
-            border: 2px solid white;
-            background: transparent;
-            color: white;
-            width: 606px;
-            font-family: Poppins, serif;
-        }
-
-        .commentWrapper textarea {
-            height: 158px;
-            resize: none;
-        }
-
-        .submit-button {
-            border: none;
-            width: 100%;
-            background: #00ACDF;
-            border-radius: 6px;
-            padding: 10px 20px;
-            font-weight: 400;
-            font-size: 16px;
-            color: white;
-            font-family: Poppins, serif;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background 0.3s ease;
-        }
-
-        .cancel-button{
-            border: none;
-            width: 100%;
-            background: transparent;
-            border-radius: 6px;
-            padding: 10px 20px;
-            font-weight: 400;
-            font-size: 16px;
-            color: white;
-            font-family: Poppins, serif;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background 0.3s ease;
-        }
-
-        .submit-button:hover{
-            background: rgb(3, 144, 188);
-        }
-
-        .cancel-button:hover{
-            background: rgb(10, 26, 40);
+        div {
+            width: 50%;
         }
     }
+}
+
+
+
+
+.formular-card {
+    background-color: rgb(13, 32, 50);
+    border-radius: 10px;
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 2px solid transparent;
+    padding: 20px;
+    margin-bottom: auto;
+    box-sizing: border-box;
+}
+
+.nameWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nameField {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.subjectWrapper, .commentWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nameField input, .subjectWrapper input, .commentWrapper textarea, .submit-button, .cancel-button {
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    width: 100%;
+    font-family: Poppins, serif;
+    box-sizing: border-box;
+}
+
+.nameField input {
+    max-width: none;
+}
+
+.commentWrapper textarea {
+    height: 158px;
+    resize: none;
+}
+
+.submit-button, .cancel-button {
+    background: #00ACDF;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: rgb(3, 144, 188);
+}
+
+.cancel-button {
+    background: transparent;
+}
+
+.cancel-button:hover {
+    background: rgb(10, 26, 40);
+}
+
 
 
 #map {
@@ -403,3 +432,35 @@ footer {
     opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+    .footer-top img:first-child {
+        display: none;
+    }
+
+    .footer-top, .footer-middle, .footer-bottom {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+    }
+
+
+    .footerCompanyText {
+        order: 1;
+    }
+
+    .footerLogos {
+        order: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
