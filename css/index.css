@@ -60,7 +60,7 @@ header {
 .container {
     max-width: 1520px;
     margin: auto;
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .navbar-container{
@@ -103,39 +103,32 @@ header {
     align-items: center;
 }
 
-.card {
+.main-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     height: 380px;
-    max-width: 1520px;
-    margin: auto auto 20px;
+    width: 1520px;
     background-color: #00ACDF;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-.title{
+.main-card-title{
     font-size: 48px;
     line-height: 72px;
     font-weight: 500;
+    margin: 0;
 }
 
-.caption{
+.main-card-caption{
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
-    margin: 10px 0;
-}
-
-.heart{
-    width: 24px;
-    height: 24px;
+    gap: 4px;
+    padding-bottom: 40px;
 }
 
 .offer-card{
@@ -174,22 +167,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -5px;
-}
 
-.service-row{
-    gap: 8px;
-}
-
-.column {
-    flex: 0 1 490.67px;
-    padding: 0 5px;
 }
 
 .small-card {
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 6px;
-    max-width: 490.67px;
+    width: 491px;
     height: 84px;
     display: flex;
     justify-content: center;
@@ -199,16 +183,14 @@ header {
     font-weight: 500;
 }
 
-.title2{
+.card-title{
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
+    padding: 10px 0;
+    margin: 0;
 }
 
-.column2 {
-    flex: 0 1 233px;
-    padding: 0 5px;
-}
 
 .corp-card{
     position: relative;
@@ -434,7 +416,7 @@ header {
 .corp-logo{
     padding-left: 16px;
     padding-right: 16px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .corp-text{
@@ -442,25 +424,19 @@ header {
     line-height: 20px;
     font-weight: 500;
     opacity: 0.7;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 20px;
+    padding: 0 16px;
     transition: opacity 0.3s ease;
-}
-
-.partner-column{
-    flex: 0 1 490px;
-    padding: 0 5px;
 }
 
 .partner-card {
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
-    max-width: 490px;
+    width: 490px;
     height: 276px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     border: 2px solid transparent;
     transition: border 0.3s ease;
@@ -492,6 +468,9 @@ header {
     fill: #00acdf;
 }
 
+.service-row{
+    gap: 8px;
+}
 
 .service-column{
     flex: max-content;
