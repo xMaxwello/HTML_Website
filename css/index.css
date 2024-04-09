@@ -12,6 +12,14 @@ a {
     color: white;
 }
 
+h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0;
+}
+
 header {
     background-color: #001427;
 }
@@ -181,16 +189,8 @@ header {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
-
-.card-title{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 500;
-    padding: 10px 0;
-    margin: 0;
-}
-
 
 .corp-card{
     position: relative;
@@ -202,6 +202,7 @@ header {
     display: flex;
     flex-direction: column;
     padding-top: 16px;
+    margin-bottom: 10px;
     transition: border 0.3s ease, background-color 0.3s ease;
 }
 
@@ -438,6 +439,7 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 10px;
     border: 2px solid transparent;
     transition: border 0.3s ease;
 }
@@ -468,14 +470,6 @@ header {
     fill: #00acdf;
 }
 
-.service-row{
-    gap: 8px;
-}
-
-.service-column{
-    flex: max-content;
-}
-
 .service-card{
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
@@ -483,6 +477,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -515,21 +510,22 @@ header {
     line-height: 24px;
     font-weight: 500;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .team-column{
-    flex: 0 1 490.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .team-card{
     display: flex;
     background-color: rgba(0, 172, 223, 0.05);
-    max-width: 490.6px;
+    width: 491px;
     max-height: 112px;
     border-radius: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     border: 2px solid transparent;
     transition: border 0.3s ease;
 }
@@ -548,7 +544,6 @@ header {
     align-self: flex-start;
     margin: 16px;
 }
-
 
 .square-color-7{
     background-color: rgba(113, 90, 255, 1);
@@ -591,6 +586,8 @@ header {
 .team-card:hover .team-text-subtitle{
     opacity: 1;
 }
+
+
 
 footer {
     width: 100%;
