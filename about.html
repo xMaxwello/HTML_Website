@@ -12,6 +12,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
             crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <meta property="og:title" content="reanmo | Dein Partner für die digitale Zukunft">
     <meta name="description" content="reanmo - Dein Partner für deine digitale Zukunft. Wir bieten maßgeschneiderte IT-Lösungen für Unternehmen jeder Größe. Kontaktiere uns noch heute.">
     <meta property="og:description" content="reanmo - Dein Partner für deine digitale Zukunft. Wir bieten maßgeschneiderte IT-Lösungen für Unternehmen jeder Größe. Kontaktiere uns noch heute.">
@@ -99,8 +102,39 @@
 <div class="team">
     <div class="container">
         <h3 class="title2">Unser Team</h3>
+        <div class="swiper-card">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/819356931050831873/937412863461556314/91.png?ex=662559c2&is=6612e4c2&hm=a348e3c27bf750501e0c9ae51de45cdf5ab6adf7556f13b8217bd28802450a93&"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+    const mySwiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        grabCursor: true,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+
 
 <div class="contact">
     <div class="container">
