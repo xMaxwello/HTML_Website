@@ -75,7 +75,7 @@ header {
 .container {
     max-width: 1520px;
     margin: auto;
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .navbar-container{
@@ -363,7 +363,9 @@ header {
     background: rgb(10, 26, 40);
 }
 
-
+.map{
+    padding-bottom: 40px;
+}
 
 #map {
     height: 480px;

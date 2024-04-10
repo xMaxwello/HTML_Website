@@ -76,7 +76,7 @@
                 <a href="index.html"><img src="/img/logo.svg" alt="company logo"></a>
             </div>
             <div class="nav-icons right">
-                <a href="/about.html"><img src="/img/Icon-with-hover.svg" alt="about card icon"></a>
+                <a href="about.html"><img src="/img/Icon-with-hover.svg" alt="about card icon"></a>
                 <a href="#" id="fullscreenToggle"><img src="/img/Icon-fullscreen.svg" alt="fullscreen icon"></a>
             </div>
         </div>
@@ -109,15 +109,14 @@
         <div class="swiper-card">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
-                    <div class="swiper-slide"><img src="https://cdn.discordapp.com/attachments/498108545359806474/1227259881308946442/IMG_20200422_203515.jpg?ex=6627c1d5&is=66154cd5&hm=faf987675f38500591b3efa72c8874b3ce667aa5163536b52fa0b4c611b4fb89&"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
+                    <div class="swiper-slide"><img src="/img/exampleavatar.png" alt="pfp placeholder"></div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -274,6 +273,24 @@
     </div>
 </footer>
 
+<script>
+
+    <!--Fullscreen-toggle-->
+    document.getElementById('fullscreenToggle').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        if (!document.fullscreenElement) {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            }
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+    });
+    
+</script>
 
 
 
