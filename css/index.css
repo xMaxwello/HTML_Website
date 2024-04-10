@@ -559,6 +559,10 @@ header {
         height: 100px;
         margin-bottom: 0;
     }
+
+    .row{
+        justify-content: center;
+    }
 }
 
 .service-card:hover{
