@@ -739,6 +739,10 @@ footer {
         text-align: center;
     }
 
+    .footer-top{
+        padding-top: 30px;
+    }
+
     .footer-bottom {
         flex-direction: column;
 
@@ -754,10 +758,8 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
+        padding-bottom: 30px;
     }
 
-    footer {
-        height: auto;
-    }
 }
 
