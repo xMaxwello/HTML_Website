@@ -198,10 +198,11 @@ header {
     border-color: white;
 }
 
-.offer-card:hover img{
+.offer-card img{
     transition: transform 0.3s ease;
 }
-.offer-card:hover .arrow-right{
+
+.offer-card:hover img{
     transform: translateX(5px);
 }
 

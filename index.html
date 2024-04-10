@@ -388,6 +388,8 @@
 
 
 <script>
+
+    <!--Fullscreen-toggle-->
     document.getElementById('fullscreenToggle').addEventListener('click', function(event) {
         event.preventDefault();
 
@@ -402,6 +404,7 @@
         }
     });
 
+    <!--Event, wenn die Maus auf der row ist, scrollt man automatisch horizontal-->
     document.querySelector('.horizontal-scrollable').addEventListener('wheel', function(e) {
         if (e.deltaY !== 0) {
             e.preventDefault();
