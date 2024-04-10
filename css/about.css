@@ -207,23 +207,21 @@ header {
 
 .swiper {
     width: 100%;
-    height: 295px;
+    height: 100%;
 }
-
 
 .swiper-slide{
     display: flex;
     justify-content: center;
+    text-align: center;
     align-content: center;
 }
 
 .swiper-slide img{
-    display: block;
     width: 200px;
     height: 200px;
     border-radius: 10px;
     border: 2px solid transparent;
-    object-fit: cover;
     transition: border 0.2s ease;
 }
 
@@ -231,7 +229,7 @@ header {
     border: 2px solid #00ACDF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .team {
         display: none;
     }
