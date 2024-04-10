@@ -242,6 +242,12 @@ header {
     flex-wrap: wrap;
 }
 
+@media (max-width: 1535px) {
+    .contact-wrapper{
+        justify-content: center;
+    }
+}
+
 .contact-card {
     border-radius: 10px;
     max-width: 740px;
