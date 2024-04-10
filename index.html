@@ -108,8 +108,11 @@
 
 <!--Die Cards mit den Referenzen-->
 <div class="container">
-    <h3>Referenzen</h3>
-    <div class="row">
+    <div class="reference-title">
+        <h3>Referenzen</h3>
+        <p class="corp-text">ALLES ANZEIGEN</p>
+    </div>
+    <div class="row horizontal-scrollable">
 
             <a href="https://www.reanmo.com/references/secjur">
                 <div class="corp-card secjur">
@@ -398,6 +401,14 @@
             }
         }
     });
+
+    document.querySelector('.horizontal-scrollable').addEventListener('wheel', function(e) {
+        if (e.deltaY !== 0) {
+            e.preventDefault();
+            this.scrollLeft += e.deltaY + e.deltaX;
+        }
+    });
+
 </script>
 
 </html>
