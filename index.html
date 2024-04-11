@@ -92,7 +92,7 @@
 
 <!--Die 3 Cards danach-->
 <div class="container">
-    <div class="row">
+    <div class="row small-card-row">
             <div class="small-card">
                 <p>75+ Projekte erfolgreich abgeschlossen</p>
             </div>
@@ -184,7 +184,7 @@
 <!--Die Cards mit den Partnerschaftsmodellen-->
 <div class="container">
     <h3>Partnerschaft Modelle</h3>
-    <div class="row">
+    <div class="row partner-card-row">
 
                 <div class="partner-card">
                     <p class="partner-text">
@@ -222,9 +222,8 @@
 <!--Die Cards mit den Services-->
 <div class="container">
     <h3>Services</h3>
-    <div class="row service-row">
+    <div class="row service-card-row">
 
-            <a href="https://www.reanmo.com/our-services/frontend-development">
                 <div class="service-card">
                     <p class="service-text">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,9 +232,7 @@
                     </p>
                     <p class="service-text">Frontend Entwicklung</p>
                 </div>
-            </a>
 
-            <a href="https://www.reanmo.com/our-services/backend-development">
                 <div class="service-card">
                     <p class="service-text">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,9 +241,7 @@
                     </p>
                     <p class="service-text">Backend Entwicklung</p>
                 </div>
-            </a>
 
-            <a href="https://www.reanmo.com/our-services/ui-ux-development">
                 <div class="service-card">
                     <p class="service-text">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,9 +250,7 @@
                     </p>
                     <p class="service-text">UI / UX Entwicklung</p>
                 </div>
-            </a>
 
-            <a href="https://www.reanmo.com/our-services/mobile-app-development">
                 <div class="service-card">
                     <p class="service-text">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,7 +259,6 @@
                     </p>
                     <p class="service-text">Mobile App Entwicklung</p>
                 </div>
-            </a>
 
     </div>
 </div>
@@ -275,12 +267,10 @@
 <!--Die Cards mit den Stellenanzeigen-->
 <div class="container">
     <h3>Werde Teil unseres Teams</h3>
-    <div class="row">
+    <div class="row team-row">
 
         <div class="team-column">
-            <div class="team-picture">
-                <img src="/img/Teambild%201.png" alt="Teambild">
-            </div>
+            <img class="team-image" src="/img/Teambild%201.png" alt="Teambild">
         </div>
 
         <div class="team-column">
@@ -401,14 +391,6 @@
             if (document.exitFullscreen) {
                 document.exitFullscreen();
             }
-        }
-    });
-
-    <!--Event, wenn die Maus auf der row ist, scrollt man automatisch horizontal-->
-    document.querySelector('.horizontal-scrollable').addEventListener('wheel', function(e) {
-        if (e.deltaY !== 0) {
-            e.preventDefault();
-            this.scrollLeft += e.deltaY + e.deltaX;
         }
     });
 

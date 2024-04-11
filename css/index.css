@@ -216,7 +216,7 @@ header {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    <!--flex-wrap: wrap;-->
     justify-content: space-around;
     gap: 10px;
 }
@@ -234,6 +234,16 @@ header {
     line-height: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1065px) {
+    .small-card-row{
+        flex-wrap: wrap;
+    }
+
+    .small-card{
+        max-width: 100%;
+    }
 }
 
 .reference-title{
@@ -486,6 +496,7 @@ header {
     transition: opacity 0.3s ease;
 }
 
+
 .partner-card {
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
@@ -505,6 +516,11 @@ header {
 @media (max-width: 768px) {
     .partner-card {
         height: 116px;
+        max-width: 100%;
+    }
+
+    .partner-card-row{
+        flex-wrap: wrap;
     }
 }
 
@@ -544,7 +560,8 @@ header {
 .service-card{
     background-color: rgba(0, 172, 223, 0.05);
     border-radius: 10px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 182px;
     display: flex;
     justify-content: center;
@@ -556,13 +573,14 @@ header {
 
 @media (max-width: 768px) {
     .service-card {
-        width: 175px;
+        flex-basis: calc(50% - 10px);
         height: 100px;
         margin-bottom: 0;
     }
 
-    .service-row{
-        justify-content: center;
+    .service-card-row{
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -586,9 +604,11 @@ header {
     }
 }
 
-.team-picture img{
-    max-width: 491px;
+.team-image{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .team-column{
@@ -602,12 +622,32 @@ header {
 .team-card{
     display: flex;
     background-color: rgba(0, 172, 223, 0.05);
-    width: auto;
-    max-height: 112px;
+    max-width: 491px;
+    width: 100%;
+    height: 112px;
     border-radius: 10px;
     margin-bottom: 10px;
     border: 2px solid transparent;
     transition: border 0.3s ease;
+}
+
+@media (max-width: 1260px){
+    .team-row{
+        flex-wrap: wrap;
+    }
+    .team-column {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .team-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .team-image{
+        max-height: 400px;
+    }
 }
 
 .team-card:hover{
